@@ -2,10 +2,26 @@
 .App {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(119,119,119,1) 18%)
 }
 
 .nasa-logo {
     margin: auto;
-    width: 500px;
-    height: 300px;
+    width: 80%;
+    max-width: 800px;
+}
+
+@media only screen and (min-width: 760px) and (max-width:1200px) {
+    .App {background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(119,119,119,1) 30%)
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .App {background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(119,119,119,1) 30%)
+    }
 }

@@ -15,15 +15,22 @@ exports[`App renders correctly 1`] = `
     >
       <input
         class="search-input"
+        data-testid="search-input"
+        placeholder="Search for"
         type="text"
       />
       <button
-        class="searchBtn"
+        class="search-btn"
         type="submit"
       >
         Search
       </button>
     </form>
+    <p
+      class="searchResults_error"
+    >
+      No results
+    </p>
   </div>
 </DocumentFragment>
 `;

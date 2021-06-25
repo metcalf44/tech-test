@@ -1,0 +1,36 @@
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2.5em;
+}
+
+.card-image {
+    width: 30%;
+    height: 20vh;
+    border-radius: 5%;
+    margin-bottom: 1em;
+}
+
+.search-results-error {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 760px) and (max-width:1200px) {
+    .card-image {
+        width: 24%;
+        height: 12vh;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .card-image {
+        width: 19%;
+        height: 10vh;
+    }
+}
