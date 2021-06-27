@@ -23,5 +23,13 @@ describe("<Search />", () => {
      const input = getByTestId("search-input");
      expect(input).toBeTruthy();
  });
+
+ it("renders button correctly", () => {
+     const { getByTestId } = render(
+         <Search setSearchResults={validProps.setSearchResults} />
+     );
+     const button = getByTestId("search-btn");
+     expect(button).toBeTruthy();
+ })
  
  });

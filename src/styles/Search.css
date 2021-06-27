@@ -15,8 +15,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     margin: auto; 
+    padding-bottom: 3em;
 }
 
 .search-btn {
@@ -54,12 +54,12 @@
 
 @media only screen and (min-width: 760px) and (max-width:1200px) {
     .search-form {
-       padding-bottom: 2.5em;
+       padding-bottom: 5.5em;
     }
 }
 @media only screen and (min-width: 1201px) {
     .search-form {
-        padding-bottom: 3.5em;
+        padding-bottom: 6.5em;
      }
     .search-btn {
         font-size: 1.75rem;

@@ -4,12 +4,13 @@ import "../styles/Search.css";
 import getImages from "../requests/getImages";
 import PropTypes from "prop-types"
 
-const Search = ({ setSearchResults }) => {
+const Search = ({ setSearchResults, setSearched }) => {
     const [value, setValue] = useState();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setSearchResults(await getImages(value));
+        setSearched(true);
     };
 
     return (
@@ -22,7 +23,13 @@ const Search = ({ setSearchResults }) => {
                 placeholder="Search for"
                 data-testid="search-input"
                 />
-                <button className="search-btn" type="submit">Display</button>
+                <button 
+                className="search-btn" 
+                type="submit"
+                data-testid="search-btn"
+                >
+                    Display
+                </button>
             </form>
         </>
     );
@@ -30,6 +37,7 @@ const Search = ({ setSearchResults }) => {
 
 Search.propTypes = {
     setSearchResults: PropTypes.func.isRequired,
+    setSearched: PropTypes.func.isRequired,
 };
 
 export default Search

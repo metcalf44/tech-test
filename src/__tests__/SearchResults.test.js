@@ -5,13 +5,13 @@ import SearchResults from "../components/SearchResults";
 
 describe("SearchResults", () => {
 
-    const images =[
+    const images = [
         "https://images-assets.nasa.gov/image/PIA12229/PIA12229~thumb.jpg",
         "https://images-assets.nasa.gov/image/PIA12233/PIA12233~thumb.jpg",
         "https://images-assets.nasa.gov/image/PIA14208/PIA14208~thumb.jpg",
     ];
 
-    const { asFragment } = render(<SearchResults />);
+    const { asFragment } = render(<SearchResults results={images} />);
 
     it("renders correctly", () => {
         expect(asFragment()).toMatchSnapshot();

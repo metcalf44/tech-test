@@ -7,6 +7,7 @@ import SearchResults from "./SearchResults";
 const App = () => {
 
   const [searchResults, setSearchResults] = useState([]);
+  const [searched, setSearched] = useState(false)
 
   return (
     <div className="App">
@@ -15,8 +16,14 @@ const App = () => {
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
         alt="nasaLogo"
         />
-      <Search setSearchResults={setSearchResults}/>
-      <SearchResults results={searchResults}/>      
+      <Search 
+      setSearchResults={setSearchResults}
+      setSearched={setSearched}
+      />
+      <SearchResults 
+      results={searchResults}
+      searched={searched}
+      />      
     </div>
   );
 }

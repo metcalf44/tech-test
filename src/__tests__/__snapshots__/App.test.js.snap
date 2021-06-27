@@ -21,16 +21,12 @@ exports[`App renders correctly 1`] = `
       />
       <button
         class="search-btn"
+        data-testid="search-btn"
         type="submit"
       >
-        Search
+        Display
       </button>
     </form>
-    <p
-      class="searchResults_error"
-    >
-      No results
-    </p>
   </div>
 </DocumentFragment>
 `;
