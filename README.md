@@ -11,10 +11,10 @@ this search engine was for a technical test from Manchester codes
 - propTypes 
 
 ## Desktop:
-(desktop.png)
+(../src/images/desktop.png)
 
 ## mobile:
-(mobile.png)
+(../src/images/mobile.png)
 
 ### Start
 
